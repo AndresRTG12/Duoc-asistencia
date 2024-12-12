@@ -1,0 +1,22 @@
+.center-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo-movible {
+  width: 150px;
+  animation: movimiento-horizontal 2s infinite alternate;
+}
+
+@keyframes movimiento-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(80px); /* Ajusta la distancia de movimiento */
+  }
+}

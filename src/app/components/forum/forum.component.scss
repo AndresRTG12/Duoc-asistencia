@@ -1,0 +1,86 @@
+.tituloPrincipal {
+  font-size: 1.5em;
+  color: darkblue;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px darkgray;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sin-bordes {
+  border: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px auto;
+}
+
+.con-padding-top {
+  margin-top: 20px !important;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+ion-item {
+  --background: rgba(255, 255, 255, 0.8);
+  --color: darkblue;
+  --highlight-color: darkgreen;
+  --padding-start: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+}
+
+ion-input,
+ion-select,
+ion-datetime {
+  --placeholder-color: gray;
+  --color: darkblue;
+  font-size: 1em;
+}
+
+ion-button {
+  --background: darkblue;
+  --color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+ion-button:hover {
+  transform: scale(1.05);
+}
+
+ion-datetime {
+  --highlight-background: lightblue;
+  --highlight-color: darkblue;
+  --placeholder-color: darkgray;
+}
+
+ion-select-option {
+  --color: darkblue;
+}
+
+ion-content {
+  background-image: url("/assets/images/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  --ion-background-color: transparent;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

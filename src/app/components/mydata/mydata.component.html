@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+
+  <div>
+    <h3>{{ 'MyData.WelcomeMessage' | translate:{ name: usuario.firstName } }}</h3>
+  </div>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.Username' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.userName" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.Email' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.Password' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.SecretQuestion' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.secretQuestion"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.SecretAnswer' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.secretAnswer"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.FirstName' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.firstName" id="Nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.LastName' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.lastName"></ion-input>
+  </ion-item>
+
+  <ion-item class="font-size-12">
+    <ion-select [(ngModel)]="usuario.educationalLevel.id"
+                (ionChange)="actualizarNivelEducacional($event)"
+                label="{{ 'MyData.Education' | translate }}" position="floating">
+      <ion-select-option *ngFor="let nivelEducacional of listaNivelesEducacionales" [value]="nivelEducacional.id">
+        {{ nivelEducacional.name }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-datetime
+      display-format="YYYY-MM-DD" picker-format="YYYY-MM-DD"
+      [(ngModel)]="usuario.dateOfBirth"
+      (ionChange)="ondateOfBirthChange($event)"
+      labelPlacement="floating">
+    </ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="{{ 'MyData.Address' | translate }}" labelPlacement="floating" [(ngModel)]="usuario.address"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="guardarUsuario()">
+    {{ 'MyData.SaveUser' | translate }}
+  </ion-button>
+
+</ion-content>

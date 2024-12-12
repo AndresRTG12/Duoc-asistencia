@@ -1,0 +1,74 @@
+ion-content {
+  background-image: url("/assets/images/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  --ion-background-color: transparent;
+}
+
+.usuarios-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.usuarios-container h1 {
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+thead {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+td {
+  padding: 10px;
+  color: black;
+}
+
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e63939;
+}

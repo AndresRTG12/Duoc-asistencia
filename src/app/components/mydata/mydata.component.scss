@@ -1,0 +1,76 @@
+ion-content {
+  background-image: url("/assets/images/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  --ion-background-color: transparent;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: darkblue;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-top: 20px;
+}
+
+ion-item {
+  --background: rgba(255, 255, 255, 0.85);
+  --color: darkblue;
+  --highlight-color: darkgreen;
+  --padding-start: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+ion-input {
+  --color: darkblue;
+  --placeholder-color: gray;
+  font-size: 1em;
+}
+
+ion-button {
+  --background: darkblue;
+  --color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  transition: transform 0.2s;
+}
+
+ion-button:hover {
+  transform: scale(1.05);
+}
+
+ion-button:focus {
+  outline: none;
+}
+
+ion-item label {
+  font-weight: bold;
+  color: darkblue;
+}
+
+ion-item input {
+  font-size: 1em;
+}
+
+ion-item ion-label {
+  color: darkblue;
+}
+
+form {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form ion-item {
+  --background: rgba(255, 255, 255, 0.9);
+  --padding: 12px;
+}

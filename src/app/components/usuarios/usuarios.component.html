@@ -1,0 +1,26 @@
+<div class="usuarios-container">
+  <h1>Gestión de Usuarios</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>"{{ 'Usuarios.user' | translate }}"</th>
+        <th>{{ 'Usuarios.email' | translate }}</th>
+        <th>{{ 'Usuarios.name' | translate }}</th>
+        <th>{{ 'Usuarios.lastname' | translate }}</th>
+        <th>{{ 'Usuarios.educa' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.userName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.educationalLevel.name }}</td>
+        <td>
+          <button (click)="deleteUser(user.userName)">{{ 'Usuarios.Button.Login' | translate }}</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
